@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primaria);
+}
+
+body {
+    background: var(--gray-300);
+} 
+
+.img-header{
+    padding: 2% 0% 0% 2%;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+
+}
+
+.conteudo__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    align-items: center;
+}
+
+
+textarea:focus {
+    outline: 0;
+}
+
+.conteudo__container__elementos__informacao {
+    display: flex;
+    text-align: center;
+    gap: 5px;
+}
+
+.conteudo__container__text {
+    width: 900px;
+    height: 550px;
+    background: var(--gray-300);
+    border-radius: 32px;
+    font-size: 32px;
+    padding: 2%;
+    margin-bottom: 2%;
+    resize: none;
+    border: none;
+}
+
+.conteudo__container__text::placeholder {
+    color: var(--dark-blue);
+}
+
+.conteudo__button {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.conteudo__button__btn {
+    font-size: 16px;
+    width: 280px;
+    padding: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.criptografar {
+    background: var(--dark-blue);
+    color: var(--white);
+    transition: .4s;
+    border: none;
+}
+
+.criptografar:hover {
+    background-color: var(--blue-800);
+    transition: .4s;
+}
+
+.descriptografar {
+    background: var(--gray-400);
+    color: var(--dark-blue);
+    transition: .4s;
+    border: 2px solid var(--dark-blue);
+}
+
+.descriptografar:hover {
+    background: var(--white);
+    transition: .4s;
+}
+
+.text-criptografado {
+    background-color: var(--white);
+    margin-right: 8%;
+    width: 400px;
+    height: 700px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.text-criptografado p {
+    margin-top: 50px;
+}
+
+.rodape {
+    margin-top: 2%;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 1% 0% 1% 0%;
+
+}
+
+.rodape__container__links {
+    display: flex;
+    gap: 25px;
+}
+
+.rodape__container__links a {
+    text-decoration: none;
+    color: var(--white);
+}
