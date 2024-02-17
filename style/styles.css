@@ -102,12 +102,30 @@ textarea:focus {
     border-radius: 32px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-top: 100px;
 }
 
-.text-criptografado p {
+#resultado {
+    display: none;
+    padding: 32px;
+    font-size: 24px;
+    height: 550px;
+    word-break: break-all;
+}
+
+#elementos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.text-criptografado__mensagem {
     margin-top: 50px;
+}
+
+.copiar {
+    display: none;
+    margin: auto;
 }
 
 .rodape {

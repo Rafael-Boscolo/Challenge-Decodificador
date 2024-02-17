@@ -21,21 +21,25 @@
         
         <section class="conteudo">
             <div class="conteudo__container">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Digite o seu texto" class="conteudo__container__text"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Digite o seu texto aqui!" class="conteudo__container__text"></textarea>
                 <div class="conteudo__container__elementos">     
                     <p class="conteudo__container__elementos__informacao"><img src="assets/bi_exclamation-circle-fill.svg" alt="">Apenas letras minúsculas e sem acento.</p>
                     <div class="conteudo__button">
-                        <button class="conteudo__button__btn criptografar">Criptografar</button>
-                        <button class="conteudo__button__btn descriptografar">Descriptografar</button>
+                        <button class="conteudo__button__btn criptografar" onclick="ValidarCriptografia(1)">Criptografar</button>
+                        <button class="conteudo__button__btn descriptografar" onclick="ValidarCriptografia(2)">Descriptografar</button>
                     </div>
                 </div>
             </div>
             <div class="text-criptografado">
-                <img src="assets/img-criptografia.svg" alt="">
-                <p>
-                    <strong>Nenhuma mensagem encontrada</strong></br>
-                    Digite um texto que você deseja criptografar ou descriptografar!    
-                </p>
+                <p id="resultado"></p>
+                <div id="elementos">
+                    <img src="assets/img-criptografia.svg" alt="">
+                    <p class="text-criptografado__mensagem">
+                        <strong>Nenhuma mensagem encontrada</strong></br>
+                        Digite um texto que você deseja criptografar ou descriptografar!    
+                    </p>
+                </div>
+                <button id="btn-copiar" class="conteudo__button__btn criptografar copiar" onclick="Copiar()">Copiar</button>
             </div>
         </section>
 
@@ -51,4 +55,7 @@
         </footer>
     </main>
 </body>
+
+<script src="js/app.js"></script>
+
 </html>
