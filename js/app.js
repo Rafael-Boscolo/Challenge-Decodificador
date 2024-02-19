@@ -65,3 +65,7 @@ function ValidarCriptografia(a) {
         }
     }   
 }
+
+function Limpar() {
+    let texto = document.querySelector('textarea').value = '';
+}

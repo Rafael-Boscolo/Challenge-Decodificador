@@ -7,6 +7,20 @@
     font-family: var(--font-primaria);
 }
 
+::-webkit-scrollbar-track {
+    background-color: var(--gray-400);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background: var(--gray-400);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-blue);
+    border-radius: 5px;
+}
+
 body {
     background: var(--gray-300);
 } 
@@ -29,7 +43,6 @@ body {
     align-items: center;
 }
 
-
 textarea:focus {
     outline: 0;
 }
@@ -43,10 +56,11 @@ textarea:focus {
 .conteudo__container__text {
     width: 900px;
     height: 550px;
-    background: var(--gray-300);
+    /* background: var(--gray-300); */
+    background: var(--white);
     border-radius: 32px;
     font-size: 32px;
-    padding: 2%;
+    padding: 32px;
     margin-bottom: 2%;
     resize: none;
     border: none;
@@ -102,6 +116,7 @@ textarea:focus {
     border-radius: 32px;
     display: flex;
     flex-direction: column;
+    box-sizing: content-box;
 }
 
 #resultado {
@@ -110,6 +125,8 @@ textarea:focus {
     font-size: 24px;
     height: 550px;
     word-break: break-all;
+    overflow: auto;
+
 }
 
 #elementos {
