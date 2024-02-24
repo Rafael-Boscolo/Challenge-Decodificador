@@ -6,7 +6,20 @@
     --gray-300: #f3f5fc;
     --gray-400: #D8DFE8;
 
+    --slate: #526D82;
+
     --white: #FFF;
 
     --font-primaria: 'roboto', sans-serif;
+
+    /* DARK THEME */
+    --black: #0F0F0F;
+
+    --gray-background: #232D3F;
+
+    --green-decrip: #5C8374;
+    --green-decrip-hover: #9EC8B9;
+
+    --green: #005B41;
+    --green-hover: #008170;
 }

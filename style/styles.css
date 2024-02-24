@@ -17,17 +17,43 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--dark-blue);
+    background: var(--slate);
     border-radius: 5px;
 }
 
-body {
-    background: var(--gray-300);
-} 
+header {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+
+}
 
 .img-header{
     padding: 2% 0% 0% 2%;
 }
+
+
+.icone_tema {
+    padding: 2% 2% 0% 0%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.bi-moon {
+    display: none;
+}
+
+body {
+    background: var(--gray-300);
+    transition: 0.3s;
+} 
 
 .conteudo {
     display: flex;
@@ -56,7 +82,6 @@ textarea:focus {
 .conteudo__container__text {
     width: 900px;
     height: 550px;
-    /* background: var(--gray-300); */
     background: var(--white);
     border-radius: 32px;
     font-size: 32px;
@@ -136,6 +161,10 @@ textarea:focus {
     padding-top: 25%;
 }
 
+.text-criptografado__thema-dark {
+    display: none;
+}
+
 .text-criptografado__mensagem {
     margin-top: 50px;
 }
@@ -149,6 +178,7 @@ textarea:focus {
     margin-top: 2%;
     background-color: var(--dark-blue);
     color: var(--white);
+    transition: 0.3s;
 }
 
 .rodape__container {
@@ -168,4 +198,61 @@ textarea:focus {
 .rodape__container__links a {
     text-decoration: none;
     color: var(--white);
+}
+
+/* DARK THEME */
+.dark {
+    background: var(--black);
+    color: var(--white);
+}
+
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+.dark textarea {
+    background: var(--gray-background);
+    color: var(--white);
+}
+
+.dark .conteudo__container__text::placeholder {
+    color: var(--white);
+}
+
+.dark .criptografar {
+    background: var(--green);
+}
+
+.dark .criptografar:hover {
+    background: var(--green-hover);
+}
+
+.dark .descriptografar {
+    background: var(--green-decrip);
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.dark .descriptografar:hover {
+    background: var(--green-decrip-hover);
+}
+
+.dark .text-criptografado {
+    background: var(--gray-background);
+}
+
+.dark .text-criptografado__thema-light {
+    display: none;
+}
+
+.dark .text-criptografado__thema-dark {
+    display: block;
+}
+
+.dark .rodape {
+    background: var(--green);
 }

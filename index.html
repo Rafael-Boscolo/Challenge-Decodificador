@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/styles.css">
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
 
     <title>Challenge Decodificador</title>
 </head>
@@ -17,6 +18,13 @@
     <main>
         <header>
             <img src="assets/Vector.svg" alt="Icone da Alura" class="img-header">
+            <div class="icone_tema">
+                <input type="checkbox" name="change-theme" id="change-theme" />
+                <label for="change-theme" >
+                    <i class="bi bi-sun"></i>
+                    <i class="bi bi-moon"></i>
+                </label>
+                </div>
         </header>
         
         <section class="conteudo">
@@ -34,7 +42,9 @@
             <div class="text-criptografado">
                 <p id="resultado"></p>
                 <div id="elementos">
-                    <img src="assets/img-criptografia.svg" alt="">
+                    <!-- <img src="assets/img-criptografia.svg" alt=""> -->
+                    <img class="text-criptografado__thema-light" src="assets/Binary code-bro.svg" alt="Imagem do campo de decriptografia">
+                    <img class="text-criptografado__thema-dark" src="assets/Binary code-bro-dark.svg" alt="Imagem do campo de decriptografia">
                     <p class="text-criptografado__mensagem">
                         <strong>Nenhuma mensagem encontrada</strong></br>
                         Digite um texto que você deseja criptografar ou descriptografar!    
@@ -58,5 +68,6 @@
 </body>
 
 <script src="js/app.js"></script>
+<script src="js/dark-theme.js" defer></script>
 
 </html>
